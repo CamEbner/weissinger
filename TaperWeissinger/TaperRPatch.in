@@ -1,0 +1,14 @@
+# TaperRPatch.in
+# Input file for Weissinger.py 
+#
+# Match output to provided test case 1
+#
+#
+##### Patch Geometry
+# Number of Lattices (NLat)                     Placeholders--Keep These Here
+50                                              0 0 0 0 0
+### Geometry Stations -- These will be interpolated between
+# X, Y, Z coordinates correspond to the quarter chord
+#x(m)    y(m)    z(m)           c(m)    alfaZL  Twist(deg)
+0.0      0.0     0.0         1.5385      -2.0          0.0
+0.0      5.0     0.0      0.4615385      -2.0          0.0

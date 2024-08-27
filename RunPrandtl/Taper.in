@@ -1,0 +1,45 @@
+# Rectangular.in
+# Input file for Main.py 
+#
+# rectangular wing
+#
+#
+##### Wing Geometry
+#Span(m)  AR      Shape   N Pts   N Break
+10        10      1       100     3
+#
+#
+### Geometry Stations -- These will be interpolated between
+#y(m)     c(m)    a0                    alfaZL  Twist(deg)
+-5        0.4615385 6.2831853071795862    -2.0     0.0
+0         1.5385    6.2831853071795862    -2.0     0.0
+5         0.4615385 6.2831853071795862    -2.0     0.0
+#-6        1      6.2831853071795862    0.0     -1.0
+#0        2      6.2831853071795862    0.0      0.0
+#6        1      6.2831853071795862    0.0      -1.0
+#
+#
+## Alphas over which to run
+#AlphaStart     AlphaEnd       N Alphas         Placeholders--Keep These Here
+0                     10             11                0 0 
+#12.7634626356   12.7634626356  1                0 0 
+#
+################################################################################
+### Nothing below this line is read:
+## Wing geometry parameters:
+# Span              -- Wing span in meters
+# AR                -- Wing aspect ratio    -- Negative number to calculate
+#                       from specified y-values below
+# Shape             -- Flag indicating wing shape: 0 for elliptical, 1 otherwise
+# N Pts             -- Number of points in Fourier series
+# N Break           -- Number of specified breaks in wing geometry; Equal to
+#                       the number of lines below
+#
+## Wing station parameters:
+# y(m)              -- y-coordinate of station  -- Negative values can be used
+#                       for elliptical and rectangular wings to calculate
+#                       from aspect ratio and span    (m)
+# c(m)              -- Chord at station               (m)
+# a0                -- dCl/dAlpha at station          (per radian)
+# alfaZL            -- Alpha of zero lift at station  (degrees)
+# Twist             -- Geometric twist at station     (degrees)
